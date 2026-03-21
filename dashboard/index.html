@@ -5,15 +5,59 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Actions Dashboard</title>
   <style>
-    body { font-family: sans-serif; max-width: 900px; margin: 40px auto; padding: 0 16px; }
+    :root {
+      --bg: #ffffff;
+      --text: #24292f;
+      --border: #ddd;
+      --th-bg: #f6f8fa;
+      --link: #0969da;
+    }
+    [data-theme="dark"] {
+      --bg: #0d1117;
+      --text: #e6edf3;
+      --border: #30363d;
+      --th-bg: #161b22;
+      --link: #58a6ff;
+    }
+    body { font-family: sans-serif; max-width: 900px; margin: 40px auto; padding: 0 16px; background: var(--bg); color: var(--text); }
     table { border-collapse: collapse; width: 100%; }
-    th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
-    th { background: #f6f8fa; }
+    th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
+    th { background: var(--th-bg); }
+    a { color: var(--link); }
+    #theme-toggle { float: right; cursor: pointer; padding: 4px 12px; border: 1px solid var(--border); border-radius: 6px; background: var(--th-bg); color: var(--text); font-size: 0.9em; }
   </style>
+  <script>
+    (function () {
+      var stored = localStorage.getItem('theme');
+      var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', (stored ? stored === 'dark' : prefersDark) ? 'dark' : 'light');
+    })();
+  </script>
 </head>
 <body>
+  <button id="theme-toggle" aria-label="Switch to light mode">🌙 Dark</button>
   <h1>Actions Dashboard</h1>
   <p>GitHub Actions status dashboard for all repositories.</p>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      var btn = document.getElementById('theme-toggle');
+
+      function apply(dark) {
+        root.setAttribute('data-theme', dark ? 'dark' : 'light');
+        btn.textContent = dark ? '☀️ Light' : '🌙 Dark';
+        btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+      }
+
+      apply(root.getAttribute('data-theme') === 'dark');
+
+      btn.addEventListener('click', function () {
+        var isDark = root.getAttribute('data-theme') !== 'dark';
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        apply(isDark);
+      });
+    })();
+  </script>
   <table>
     <thead>
       <tr><th>Repository</th><th>Status</th></tr>
