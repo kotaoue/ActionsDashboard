@@ -17,4 +17,3 @@ table { border-collapse: collapse; width: 100%; }
 th, td { border: 1px solid var(--border); padding: 8px 12px; text-align: left; }
 th { background: var(--th-bg); }
 a { color: var(--link); }
-#theme-toggle { float: right; cursor: pointer; padding: 4px 12px; border: 1px solid var(--border); border-radius: 6px; background: var(--th-bg); color: var(--text); font-size: 0.9em; }
