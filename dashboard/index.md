@@ -1,0 +1,33 @@
+# Actions Dashboard
+
+GitHub Actions status dashboard for all repositories.
+
+| Repository | Status |
+| - | - |
+| [chiken](https://github.com/kotaoue/chiken) | [![Test](https://github.com/kotaoue/chiken/actions/workflows/test.yml/badge.svg)](https://github.com/kotaoue/chiken/actions/workflows/test.yml) |
+| [combine-rss-feeds](https://github.com/kotaoue/combine-rss-feeds) | [![Go](https://github.com/kotaoue/combine-rss-feeds/actions/workflows/test.yml/badge.svg)](https://github.com/kotaoue/combine-rss-feeds/actions/workflows/test.yml) |
+| [combine-rss-feeds](https://github.com/kotaoue/combine-rss-feeds) | [![Update major version tag](https://github.com/kotaoue/combine-rss-feeds/actions/workflows/release-tag.yml/badge.svg)](https://github.com/kotaoue/combine-rss-feeds/actions/workflows/release-tag.yml) |
+| [EnglishLog](https://github.com/kotaoue/EnglishLog) | [![Daily English Quiz](https://github.com/kotaoue/EnglishLog/actions/workflows/daily-quiz.yml/badge.svg)](https://github.com/kotaoue/EnglishLog/actions/workflows/daily-quiz.yml) |
+| [EnglishLog](https://github.com/kotaoue/EnglishLog) | [![Generate Scoring SVG](https://github.com/kotaoue/EnglishLog/actions/workflows/generate-scoring-svg.yml/badge.svg)](https://github.com/kotaoue/EnglishLog/actions/workflows/generate-scoring-svg.yml) |
+| [FitnessStreak](https://github.com/kotaoue/FitnessStreak) | [![Create Daily Fitness PR](https://github.com/kotaoue/FitnessStreak/actions/workflows/create-daily-pr.yml/badge.svg)](https://github.com/kotaoue/FitnessStreak/actions/workflows/create-daily-pr.yml) |
+| [FitnessStreak](https://github.com/kotaoue/FitnessStreak) | [![Generate Fitness Heatmap](https://github.com/kotaoue/FitnessStreak/actions/workflows/generate-heatmap.yml/badge.svg)](https://github.com/kotaoue/FitnessStreak/actions/workflows/generate-heatmap.yml) |
+| [FitnessStreak](https://github.com/kotaoue/FitnessStreak) | [![Save Fitness Results](https://github.com/kotaoue/FitnessStreak/actions/workflows/save-results.yml/badge.svg)](https://github.com/kotaoue/FitnessStreak/actions/workflows/save-results.yml) |
+| [gamemo](https://github.com/kotaoue/gamemo) | [![Fetch Splatoon3 sheets](https://github.com/kotaoue/gamemo/actions/workflows/fetch-splatoon3-sheets.yml/badge.svg)](https://github.com/kotaoue/gamemo/actions/workflows/fetch-splatoon3-sheets.yml) |
+| [gamemo](https://github.com/kotaoue/gamemo) | [![Lint Markdown](https://github.com/kotaoue/gamemo/actions/workflows/lint-markdown.yml/badge.svg)](https://github.com/kotaoue/gamemo/actions/workflows/lint-markdown.yml) |
+| [gghq](https://github.com/kotaoue/gghq) | [![CI](https://github.com/kotaoue/gghq/actions/workflows/ci.yml/badge.svg)](https://github.com/kotaoue/gghq/actions/workflows/ci.yml) |
+| [gghq](https://github.com/kotaoue/gghq) | [![Release](https://github.com/kotaoue/gghq/actions/workflows/release.yml/badge.svg)](https://github.com/kotaoue/gghq/actions/workflows/release.yml) |
+| [go-php-print-debug](https://github.com/kotaoue/go-php-print-debug) | [![Search Print Debug](https://github.com/kotaoue/go-php-print-debug/actions/workflows/search_print_debug.yml/badge.svg)](https://github.com/kotaoue/go-php-print-debug/actions/workflows/search_print_debug.yml) |
+| [go-php-print-debug](https://github.com/kotaoue/go-php-print-debug) | [![Update major version tag](https://github.com/kotaoue/go-php-print-debug/actions/workflows/release-tag.yml/badge.svg)](https://github.com/kotaoue/go-php-print-debug/actions/workflows/release-tag.yml) |
+| [goiku](https://github.com/kotaoue/goiku) | [![CI](https://github.com/kotaoue/goiku/actions/workflows/ci.yml/badge.svg)](https://github.com/kotaoue/goiku/actions/workflows/ci.yml) |
+| [goyokiki](https://github.com/kotaoue/goyokiki) | [![Go](https://github.com/kotaoue/goyokiki/actions/workflows/test.yml/badge.svg)](https://github.com/kotaoue/goyokiki/actions/workflows/test.yml) |
+| [kotaoue](https://github.com/kotaoue/kotaoue) | [![Go](https://github.com/kotaoue/kotaoue/actions/workflows/test.yml/badge.svg)](https://github.com/kotaoue/kotaoue/actions/workflows/test.yml) |
+| [kotaoue](https://github.com/kotaoue/kotaoue) | [![Update Gource GIF](https://github.com/kotaoue/kotaoue/actions/workflows/update-gource-gif.yml/badge.svg)](https://github.com/kotaoue/kotaoue/actions/workflows/update-gource-gif.yml) |
+| [kotaoue](https://github.com/kotaoue/kotaoue) | [![Update README](https://github.com/kotaoue/kotaoue/actions/workflows/update-readme.yml/badge.svg)](https://github.com/kotaoue/kotaoue/actions/workflows/update-readme.yml) |
+| [major-tag-floater](https://github.com/kotaoue/major-tag-floater) | [![CI](https://github.com/kotaoue/major-tag-floater/actions/workflows/ci.yml/badge.svg)](https://github.com/kotaoue/major-tag-floater/actions/workflows/ci.yml) |
+| [major-tag-floater](https://github.com/kotaoue/major-tag-floater) | [![Release](https://github.com/kotaoue/major-tag-floater/actions/workflows/release.yml/badge.svg)](https://github.com/kotaoue/major-tag-floater/actions/workflows/release.yml) |
+| [pr-checklist-collector](https://github.com/kotaoue/pr-checklist-collector) | [![Go](https://github.com/kotaoue/pr-checklist-collector/actions/workflows/test.yml/badge.svg)](https://github.com/kotaoue/pr-checklist-collector/actions/workflows/test.yml) |
+| [pr-checklist-collector](https://github.com/kotaoue/pr-checklist-collector) | [![Update major version tag](https://github.com/kotaoue/pr-checklist-collector/actions/workflows/release.yml/badge.svg)](https://github.com/kotaoue/pr-checklist-collector/actions/workflows/release.yml) |
+| [x_x](https://github.com/kotaoue/x_x) | [![Test](https://github.com/kotaoue/x_x/actions/workflows/test.yml/badge.svg)](https://github.com/kotaoue/x_x/actions/workflows/test.yml) |
+| [ygoc](https://github.com/kotaoue/ygoc) | [![build](https://github.com/kotaoue/ygoc/actions/workflows/build.yml/badge.svg)](https://github.com/kotaoue/ygoc/actions/workflows/build.yml) |
+| [ygoc](https://github.com/kotaoue/ygoc) | [![CodeScanning](https://github.com/kotaoue/ygoc/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/kotaoue/ygoc/actions/workflows/codeql-analysis.yml) |
+| [yokiyoki](https://github.com/kotaoue/yokiyoki) | [![Test](https://github.com/kotaoue/yokiyoki/actions/workflows/test.yml/badge.svg)](https://github.com/kotaoue/yokiyoki/actions/workflows/test.yml) |
