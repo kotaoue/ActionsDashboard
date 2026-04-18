@@ -7,7 +7,6 @@ on:
 
 permissions:
   contents: write
-  pull-requests: write
 
 jobs:
   update-badges:
@@ -22,31 +21,15 @@ jobs:
           set -euo pipefail
           python3 .github/scripts/generate_dashboard.py
 
-      - name: Create Pull Request
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit and push changes
         run: |
-          BRANCH="update-badges"
-
           if git diff --quiet dashboard/index.html; then
-            echo "No changes detected, skipping PR creation."
+            echo "No changes detected, skipping commit."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -B "$BRANCH"
           git add dashboard/index.html
           git commit -m "chore: update action badges"
-          git push -f origin "$BRANCH"
-
-          EXISTING_PR=$(gh pr list --head "$BRANCH" --state open --json number --jq '.[0].number // empty')
-          if [ -n "$EXISTING_PR" ]; then
-            echo "PR #$EXISTING_PR already exists and has been updated by the push."
-          else
-            gh pr create \
-              --title "chore: update action badges" \
-              --body "Automatically updated action badges from kotaoue/* repositories." \
-              --base main \
-              --head "$BRANCH"
-          fi
+          git push origin HEAD:main
